@@ -1,0 +1,22 @@
+nav{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: transparent;
+
+    #logo-container{
+        display: flex;
+        width: fit-content;
+    }
+
+    button{
+        background-color: transparent;
+        padding: 5px 30px;
+        border: solid 1px #e0e0e0;
+        border-radius: 50px;
+        cursor: pointer;
+        color: #e0e0e0;
+        height: 50px;
+    }
+}
