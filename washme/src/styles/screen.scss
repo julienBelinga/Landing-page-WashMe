@@ -1,0 +1,15 @@
+.screenshot{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+from {
+    transform: translate(37vw,36vh);
+}
+to {
+    transform: translate(37vw,28vh);
+}
+}
+  
