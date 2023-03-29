@@ -1,15 +1,26 @@
+#usecase{
+    z-index: 2;
+    display: inline-flex;
+
+    .text{
+        width: 35%;
+        padding: 20px;
+    }
+}
+
 .screenshot{
-    animation-name: fadeIn;
+    // animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    transform: translateX(37vw);
 }
 
 @keyframes fadeIn {
 from {
-    transform: translate(37vw,36vh);
+    transform: translate(37vw,8vh);
 }
 to {
-    transform: translate(37vw,28vh);
+    transform: translate(37vw,0);
 }
 }
   

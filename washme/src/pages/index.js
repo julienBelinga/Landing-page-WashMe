@@ -15,8 +15,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <About/>
-        <Screen/>
+        <section id="presentation">
+          <About/>
+          <Screen/>
+        </section>
       </main>
     </>
   )
