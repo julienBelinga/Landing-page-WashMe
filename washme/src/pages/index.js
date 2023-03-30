@@ -27,34 +27,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <Parallax pages={3}>
-          <ParallaxLayer offset={0} speed={1}>
-            <section id="presentation">
-              <About/>
-            </section>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1} speed={1}>
-            <section id="screen">
-              <Screen ref={screenRef} />
-            </section>
-          </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={1}>
-            <section id="statistic">
-              <Stat
-              stat="1000+"
-              description="Nombre d'utilisateur moyen par jour"
-              />
-              <Stat
-              stat="1000+"
-              description="Nombre d'utilisateur moyen par jour"
-              />
-              <Stat
-              stat="1000+"
-              description="Nombre d'utilisateur moyen par jour"
-              />
-          </section>
-          </ParallaxLayer>
-        </Parallax> */}
         <section id="presentation">
           <About/>
         </section>
