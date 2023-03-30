@@ -8,19 +8,25 @@
     }
 }
 
+#screen-container{
+    position: relative;
+}
+
 .screenshot{
-    // animation-name: fadeIn;
-    animation-duration: 1s;
+    animation-name: fadeIn;
+    height: 100vh;
+    width: auto;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    transform: translateX(37vw);
+    margin-left: calc(50% - 224px);
 }
 
 @keyframes fadeIn {
 from {
-    transform: translate(37vw,8vh);
+    transform: translateY(8vh);
 }
 to {
-    transform: translate(37vw,0);
+    transform: translateY(-1vh);
 }
 }
   
