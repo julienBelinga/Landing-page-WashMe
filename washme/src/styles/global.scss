@@ -8,13 +8,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-main{
-    overflow: scroll;
-    height: 94vh;
-}
-
 *{
     &::-webkit-scrollbar {
         display: none;
     }
+}
+
+main{
+    display: grid;
 }
