@@ -6,9 +6,9 @@ import apple from '@/assets/apple.png'
 export default function About() {
   return (
     <section id="about">
-        <h1>Spare your time<br/> using WashMe</h1>
-        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies tincidunt, nunc nisl aliquam nisl, vel aliqua<br/>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies tincidunt, nunc nisl aliquam nisl, vel aliqua</p>
+        <h1>Economisez <em style={{color: 'rgb(63, 174, 255)'}}>du temps</em>,<br/>Gagnez <em style={{color: 'rgb(63, 174, 255)'}}>de l'argent</em> !</h1>
+        <p id="description">Première plateforme de blanchisserie de particulier à particulier<br/>
+        Découvrez comment Washme peut vous aider à optimiser votre emploi du temps et à arrondir vos fins de mois grâce à une solution innovante et éco-responsable.</p>
         <div id="button-download">
             <button>
               <Image src={playstore} alt="Google Play" width={30} height={30}/>

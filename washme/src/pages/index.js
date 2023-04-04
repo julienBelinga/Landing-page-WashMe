@@ -5,6 +5,7 @@ import Screen from '@/components/multiple-screen'
 import { useRef } from 'react'
 import Stat from '@/components/statistic'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import Newsletter from '@/components/newsletter'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,17 +36,20 @@ export default function Home() {
         </section>
         <section id="statistic">
           <Stat
-          stat="1000+"
+          stat="10000"
           description="Nombre d'utilisateur moyen par jour"
-          />
+          /><hr></hr>
           <Stat
-          stat="1000+"
+          stat="10000"
           description="Nombre d'utilisateur moyen par jour"
-          />
+          /><hr></hr>
           <Stat
-          stat="1000+"
+          stat="10000"
           description="Nombre d'utilisateur moyen par jour"
           />
+        </section>
+        <section id='newsletter'>
+          <Newsletter/>
         </section>
       </main>
     </>

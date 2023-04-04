@@ -3,4 +3,60 @@
     justify-content: space-around;
     width: 100%;
     text-align: center;
+    position: absolute;
+    top: 200vh;
+
+    .stat-container{
+        display: grid;
+        place-items: center;
+        font-style: italic;
+        padding: 1;
+        font-weight: bold;
+    }
+
+    .number {
+        display: flex;
+        align-items: center;
+        font-size: 6rem;
+        justify-content: flex-end;
+      
+        .animate {
+          filter: url("#blurFilter");
+        }
+      
+        .left,
+        .right {
+          min-width: 11rem;
+          text-align: right;
+        }
+          
+          .right {
+            padding-right: 1rem;
+          }
+      
+        .separator {
+          opacity: 0;
+          transition: opacity 0.1s ease;
+      
+          &.show {
+            opacity: 1;
+          }
+        }
+    }
+      
+    .svgFilter {
+    display: block; width: 0; height: 0;
+    }
+    
+    .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    }
+    
+    :root {
+    --labs-sys-color-on-background: black;
+    }   
 }
+
+
