@@ -11,7 +11,7 @@ export default function MultipleScreen() {
         <Image className="screenshot" src={screen} alt="screenshot of WashMe" />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1} speed={3} sticky={{ start: 1, end: 2 }}>
+      <ParallaxLayer offset={1} speed={5} sticky={{ start: 1, end: 2 }}>
         <TextBlock
           class="text-left"
           title="Devenez prestataire Washme : gagnez de l'argent en faisant une bonne action"
@@ -19,7 +19,7 @@ export default function MultipleScreen() {
         />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={2} speed={3} sticky={{ start: 2, end: 4 }}>
+      <ParallaxLayer offset={2} speed={5} sticky={{ start: 2, end: 4 }}>
         <TextBlock
           class="text-right"
           title="Washme : la solution économique et écologique pour laver votre linge"
@@ -27,7 +27,7 @@ export default function MultipleScreen() {
         />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={3} speed={3} sticky={{start: 3, end: 4}}>
+      <ParallaxLayer offset={3} speed={5} sticky={{start: 3, end: 4}}>
         <TextBlock
           class="text-left"
           title="Washme : l'application qui réunit une communauté autour de l'écologie et du partage"

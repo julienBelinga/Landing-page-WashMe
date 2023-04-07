@@ -36,16 +36,16 @@ export default function Home() {
         </section>
         <section id="statistic">
           <Stat
-          stat="10000"
-          description="Nombre d'utilisateur moyen par jour"
+          stat="23 214"
+          description="Le nombre d'heures économisées par nos utilisateurs dans une vie"
           /><hr></hr>
           <Stat
-          stat="10000"
-          description="Nombre d'utilisateur moyen par jour"
+          stat="31.8"
+          description="Le nombre de mois économisées par nos utilisateurs dans une vie"
           /><hr></hr>
           <Stat
-          stat="10000"
-          description="Nombre d'utilisateur moyen par jour"
+          stat="2.7"
+          description="Le nombre d'années économisées par nos utilisateurs dans une vie"
           />
         </section>
         <section id='newsletter'>
