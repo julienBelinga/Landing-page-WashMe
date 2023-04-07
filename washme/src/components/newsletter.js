@@ -7,9 +7,9 @@ export default function Newsletter() {
     <div className='newsletter-container'>
         <form>
             <h1>Rejoins <em style={{color: 'rgb(63, 174, 255)'}}>Notre communauté</em></h1>
-            <p>Suis notre actualité et bénéficie d'offres exclusives</p>
+            <p>Suis notre actualité et bénéficie d&apos;offres exclusives</p>
             <div className='email-box'>
-                <Image src={mail} width={35}/>
+                <Image src={mail} width={35} alt="enveloppe"/>
                 <input className='tbox' type="email" name="" value="" placeholder="Enter your email address" />
                 <button className='btn' type="button" name='button'>Subscribe</button>
             </div>
