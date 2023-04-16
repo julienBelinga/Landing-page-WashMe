@@ -1,13 +1,18 @@
 .text-block{
     position: relative;
-    width: 35%;
-    top: 40%;
+    width: calc((96% - 600px) / 2);
+    top: 35%;
+
+    p{
+        text-align: justify;
+    }
 }
 
 .text-left{
-    margin-left: 20px;
+    margin-left: 2vw;
 }
 
 .text-right{
-    margin-left: 65%;
+    position: fixed;
+    right: 3.5vw;
 }

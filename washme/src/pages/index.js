@@ -6,6 +6,7 @@ import { useRef } from 'react'
 import Stat from '@/components/statistic'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Newsletter from '@/components/newsletter'
+import MobileScreen from '@/components/mobileScreen'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main id="desktop">
         <section id="presentation">
           <About/>
         </section>
@@ -48,6 +49,15 @@ export default function Home() {
           description="Le nombre d'années économisées par nos utilisateurs dans une vie"
           />
         </section>
+        <section id='newsletter'>
+          <Newsletter/>
+        </section>
+      </main>
+      <main id="mobile">
+        <section id="presentation">
+            <About/>
+        </section>
+        <MobileScreen/>
         <section id='newsletter'>
           <Newsletter/>
         </section>
