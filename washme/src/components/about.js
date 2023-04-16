@@ -5,7 +5,7 @@ import apple from '@/assets/apple.png'
 
 export default function About() {
   return (
-    <section id="about">
+    <div id="about">
         <h1>Economisez <em style={{color: 'rgb(63, 174, 255)'}}>du temps</em>,<br/>Gagnez <em style={{color: 'rgb(63, 174, 255)'}}>de l&apos;argent</em> !</h1>
         <p id="description">Première plateforme de blanchisserie de particulier à particulier<br/>
         Découvrez comment Washme peut vous aider à optimiser votre emploi du temps et à arrondir vos fins de mois grâce à une solution innovante et éco-responsable.</p>
@@ -19,6 +19,6 @@ export default function About() {
               <p>Download on the<br/><strong>App Store</strong></p>
             </button>
         </div>
-    </section>    
+    </div>    
   )
 }
