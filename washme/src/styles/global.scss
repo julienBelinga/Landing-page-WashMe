@@ -37,6 +37,10 @@ body{
         margin: 5% 5%;
         object-fit: contain;
     }
+
+    #newsletter{
+        position: unset;
+    }
 }
 
 @media screen and (min-width: 1024px){
