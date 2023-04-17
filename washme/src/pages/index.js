@@ -4,7 +4,6 @@ import About from '@/components/about'
 import Screen from '@/components/multiple-screen'
 import { useRef } from 'react'
 import Stat from '@/components/statistic'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Newsletter from '@/components/newsletter'
 import MobileScreen from '@/components/mobileScreen'
 
@@ -30,7 +29,10 @@ export default function Home() {
       </Head>
       <main id="desktop">
         <section id="presentation">
-          <About/>
+          <About
+          description="Première plateforme de blanchisserie de particulier à particulier<br/>
+          Découvrez comment Washme peut vous aider à optimiser votre emploi du temps et à arrondir vos fins de mois grâce à une solution innovante et éco-responsable."
+          />
         </section>
         <section id="screen">
           <Screen ref={screenRef} />
@@ -55,7 +57,9 @@ export default function Home() {
       </main>
       <main id="mobile">
         <section id="presentation">
-            <About/>
+            <About
+            description="Première plateforme de blanchisserie de particulier à particulier"
+            />
         </section>
         <MobileScreen/>
         <section id='newsletter'>

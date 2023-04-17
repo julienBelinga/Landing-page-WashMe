@@ -7,7 +7,7 @@ import TextBlock from "@/components/text-block";
 export default function MultipleScreen() {
   return (
     <Parallax id="screen-container" pages={5}>
-      <ParallaxLayer offset={0} speed={1} sticky={{ start: 0, end: 4 }}>
+      <ParallaxLayer offset={0} speed={1} sticky={{ start: 0, end: 4 }} style={{textAlign: 'center'}}>
         <Image className="screenshot" src={screen} alt="screenshot of WashMe" />
       </ParallaxLayer>
 
