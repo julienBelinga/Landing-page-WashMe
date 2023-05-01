@@ -7,7 +7,6 @@ export default function Navbar() {
     <nav>
         <div id="logo-container">
             <Image src={logo} alt="logo" width={50}/>
-            <h1>WashMe</h1>
         </div>
         <button>GET THE APP</button>
     </nav>
