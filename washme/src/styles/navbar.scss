@@ -11,6 +11,8 @@ nav{
     #logo-container{
         display: flex;
         width: fit-content;
+        border-radius: 50%;
+        overflow: hidden;
     }
 
     button{
