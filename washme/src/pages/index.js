@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import About from '@/components/about'
 import Screen from '@/components/multiple-screen'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import Stat from '@/components/statistic'
 import Newsletter from '@/components/newsletter'
 import MobileScreen from '@/components/mobileScreen'
@@ -18,6 +18,46 @@ export default function Home() {
       screenRef.current.scrollTop = 0;
     }
   };
+
+  useEffect(() => {
+    const isInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    };
+
+    const handleWheel = (event) => {
+      event.preventDefault();
+
+      const delta = event.deltaY || event.detail || event.wheelDelta;
+      const sections = document.querySelectorAll('#desktop section');
+      let visibleSection = null;
+
+      sections.forEach((section) => {
+        if (isInViewport(section)) {
+          visibleSection = section;
+        }
+      });
+
+      const nextSection = delta > 0
+        ? visibleSection.nextElementSibling
+        : visibleSection.previousElementSibling;
+
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener('wheel', handleWheel, { passive: false });
+
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+    };
+  }, []);
 
   return (
     <>
