@@ -20,6 +20,7 @@
   }
 
   #button-download {
+    
     button {
       background-color: #000;
       color: #fff;
@@ -29,6 +30,20 @@
       justify-content: space-around;
       border: none;
       text-align: left;
+      position: relative;
+      // overflow: hidden;
+
+      &::before {
+        content: "Bientôt disponible";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(6%, 45%) rotate(-45deg);
+        background-color: red;
+        color: white;
+        padding: 8px 20px;
+        font-size: 12px;
+      }
 
       img {
         position: relative;
