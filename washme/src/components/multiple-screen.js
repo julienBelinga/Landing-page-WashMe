@@ -6,12 +6,12 @@ import TextBlock from "@/components/text-block";
 
 export default function MultipleScreen() {
   return (
-    <Parallax id="screen-container" pages={5}>
-      <ParallaxLayer offset={0} speed={1} sticky={{ start: 0, end: 4 }} style={{textAlign: 'center'}}>
+    <>
+      <ParallaxLayer offset={1} speed={1} sticky={{ start: 1, end: 5 }} style={{textAlign: 'center'}}>
         <Image className="screenshot" src={screen} alt="screenshot of WashMe" />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1} speed={5} sticky={{ start: 1, end: 2 }}>
+      <ParallaxLayer offset={2} speed={5} sticky={{ start: 2, end: 3 }}>
         <TextBlock
           class="text-left"
           title="Devenez prestataire Washme : gagnez de l'argent en faisant une bonne action"
@@ -19,7 +19,7 @@ export default function MultipleScreen() {
         />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={2} speed={5} sticky={{ start: 2, end: 4 }}>
+      <ParallaxLayer offset={3} speed={5} sticky={{ start: 3, end: 5 }}>
         <TextBlock
           class="text-right"
           title="Washme : la solution économique et écologique pour laver votre linge"
@@ -27,13 +27,13 @@ export default function MultipleScreen() {
         />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={3} speed={5} sticky={{start: 3, end: 4}}>
+      <ParallaxLayer offset={4} speed={5} sticky={{start: 4, end: 5}}>
         <TextBlock
           class="text-left"
           title="Washme : l'application qui réunit une communauté autour de l'écologie et du partage"
-          description="Washme est une application mobile qui met en relation des personnes ayant du linge sale à laver avec des prestataires disposant d'une machine à laver. Grâce à notre plateforme, vous pouvez économiser du temps et de l'argent tout en contribuant à la préservation de l'environnement. En effet, en partageant des machines à laver, nous réduisons notre empreinte écologique et nous participons à la création d'une communauté active de personnes partageant les mêmes valeurs. Notre application est facile à utiliser et vous permettra de trouver rapidement un prestataire ou un client près de chez vous. Rejoignez Washme dès maintenant et faites partie de cette communauté active !"
+          description="Washme est une application mobile qui met en relation des personnes ayant du linge sale à laver avec des prestataires disposant d'une machine à laver. Grâce à notre plateforme, vous pouvez économiser du temps et de l'argent tout en contribuant à la préservation de l'environnement. En effet, en partageant des machines à laver, nous pouvons réduire notre empreinte carbone et limiter la consommation d'eau et d'énergie. De plus, en rejoignant la communauté Washme, vous pourrez partager des moments conviviaux avec d'autres personnes qui partagent les mêmes valeurs que vous. Alors n'hésitez plus, téléchargez Washme dès maintenant et rejoignez notre communauté !"
         />
-      </ParallaxLayer>
-    </Parallax>
+        </ParallaxLayer>
+    </>
   );
 }
