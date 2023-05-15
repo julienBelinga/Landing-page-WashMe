@@ -6,7 +6,7 @@ import apple from '@/assets/apple.png'
 export default function About(props) {
   return (
     <div id="about">
-        <h1>Economisez <em style={{color: 'rgb(63, 174, 255)'}}>du temps</em>,<br/>Gagnez <em style={{color: 'rgb(63, 174, 255)'}}>de l&apos;argent</em> !</h1>
+        <h1>Donnez votre linge,<em style={{color: 'rgb(63, 174, 255)'}}> gagnez du temps</em><br/>Lavez du linge,<em style={{color: 'rgb(63, 174, 255)'}}> gagnez de l&apos;argent</em> !</h1>
         <p id="description" dangerouslySetInnerHTML={{ __html:props.description}}></p>
         <div id="button-download">
             <button>

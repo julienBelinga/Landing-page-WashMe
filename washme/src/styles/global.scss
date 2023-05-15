@@ -1,12 +1,12 @@
-html{
-    scroll-behavior: smooth;
-}
-
 body{
     background-color:#111213;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+}
+
+#desktop {
+  overflow: visible;
 }
 
 *{
@@ -45,14 +45,6 @@ body{
 }
 
 @media screen and (min-width: 1024px){
-
-    #desktop{
-        display: grid;
-    }
-    #mobile{
-        display: none;
-    }
-    
 }
 
 @media screen and (max-width: 1024px){
